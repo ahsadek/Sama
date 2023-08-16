@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Comic Neue"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" style="height: 21.5rem">
+      <div class="question" style="padding-left: 1rem; padding-right: 1rem">
+        First we have to agree on a few things
+      </div>
+      <div class="tacbox">
+        <input id="checkbox" type="checkbox" />
+        <label for="checkbox">
+          I agree to these
+          <a href="./agreement.html">Terms and Conditions</a>.</label
+        >
+      </div>
+      <div class="answer">
+        <a
+          id="submitButton"
+          href="./date.html"
+          class="button-30 yes-button disabled-btn"
+        >
+          Yalla beena
+        </a>
+      </div>
+    </div>
+  </body>
+  <script>
+    const checkbox = document.getElementById("checkbox");
+    const submitButton = document.getElementById("submitButton");
+
+    checkbox.addEventListener("change", function () {
+      if (!checkbox.checked) submitButton.classList.add("disabled-btn");
+      else submitButton.classList.remove("disabled-btn");
+    });
+  </script>
+</html>

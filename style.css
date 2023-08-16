@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fae8ff;
+  width: 100%;
+  height: 100vh;
+}
+
+.disabled-btn {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.password {
+  width: 10rem;
+  font-size: larger;
+  margin-bottom: 2.5rem;
+  border: solid 1px;
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.cute-drawing {
+  width: 15rem;
+  border: solid 2px;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  margin-bottom: 2.5rem;
+}
+
+.tacbox {
+  width: 17rem;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  border: 3px solid #ddd;
+  background-color: #eee;
+  max-width: 800px;
+  font-family: "Comic Neue";
+  font-size: large;
+  border-radius: 20px;
+  margin-bottom: 2.5rem;
+}
+
+input {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 23rem;
+  height: 12rem;
+  border-radius: 25px;
+  border: solid 3px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.list-of-agreements {
+  font-size: larger;
+  font-family: "Comic Neue";
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.question {
+  font-size: x-large;
+  font-weight: 500;
+  font-family: "Comic Neue";
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.answer {
+  font-size: x-large;
+  font-weight: 500;
+  font-family: "Comic Neue";
+  display: flex;
+  gap: 1.5rem;
+}
+
+.yes-button {
+  background-color: #86efac;
+}
+
+.no-button {
+  background-color: #fca5a5;
+}
+
+li {
+  padding-bottom: 1rem;
+}
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  border-radius: 15px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #e5e5ea 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 45px;
+  width: auto;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #c5c5c8 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #c5c5c8 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #c5c5c8 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #c5c5c8 0 3px 7px inset;
+  transform: translateY(2px);
+}
